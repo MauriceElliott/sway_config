@@ -21,6 +21,9 @@ set $editor hx
 # Example configuration for a specific output (you can configure each output individually)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_2048x1536.png fill
 
+exec pipewire && exec wireplumber
+exec waybar
+
 ### Key bindings
 #
 # Basics:
@@ -28,11 +31,11 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_2048x1536.png fill
 # - Use $mod+Shift+q to close the focused window.
 # - Use $mod+d to launch a dmenu application launcher.
 
-bar {
-    status_command ~/.config/sway/scripts/status.sh
-    position top
-    font "Dank Mono Bold"
-}
+# bar {
+#     status_command ~/.config/sway/scripts/status.sh
+#     position top
+#     font "Dank Mono Bold"
+# }
 
 # Start a terminal
 bindsym $mod+Return exec $term
