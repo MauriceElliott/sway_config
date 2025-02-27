@@ -21,7 +21,6 @@ set $editor hx
 # Example configuration for a specific output (you can configure each output individually)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_2048x1536.png fill
 
-exec pipewire && exec wireplumber
 exec waybar
 
 ### Key bindings
