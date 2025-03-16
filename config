@@ -61,11 +61,14 @@ bar {
 # - Use $mod+Shift+q to close the focused window.
 # - Use $mod+d to launch a dmenu application launcher.
 
-# bar {
-#     status_command ~/.config/sway/scripts/status.sh
-#     position top
-#     font "Dank Mono Bold"
-# }
+input "1133:16534:Logitech_ERGO_M575" {
+    left_handed disabled
+    tap enabled
+    natural_scroll disabled
+    dwt enabled
+    accel_profile "flat" # disable mouse acceleration (enabled by default; to set it manually, use "adaptive" instead of "flat")
+    pointer_accel 0.9 # set mouse sensitivity (between -1 and 1)
+}
 
 # Start a terminal
 bindsym $mod+Return exec $term
