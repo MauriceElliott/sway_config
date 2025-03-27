@@ -54,6 +54,10 @@ bar {
 	swaybar_command waybar
 }
 
+#display positions
+output DP-4 pos 1920 0
+output eDP-1 pos 0 0
+
 ### Key bindings
 #
 # Basics:
@@ -106,8 +110,8 @@ bindsym $mod+w layout toggle split
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 
-gaps inner 24
-gaps outer 24
+gaps inner 8
+gaps outer 8
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exit
