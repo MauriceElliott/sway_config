@@ -77,6 +77,12 @@ input "1133:16534:Logitech_ERGO_M575" {
 # Start a terminal
 bindsym $mod+Return exec $term
 
+# Start firefox
+bindsym $mod+Shift+f exec firefox-wayland
+
+# Start Picotron
+bindsym $mod+Shift+p exec picotron
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 
