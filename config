@@ -83,6 +83,9 @@ bindsym $mod+Shift+f exec firefox-wayland
 # Start Picotron
 bindsym $mod+Shift+p exec picotron
 
+# Start sound control
+bindsym $mod+Shift+s exec pavucontrol
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 
