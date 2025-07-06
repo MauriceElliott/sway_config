@@ -24,7 +24,7 @@ output * bg ~/.wallpapers/chernobyl4k.jpg fill
 exec pulseaudio
 
 
-# class					         border  backgr. text    indicator child_border
+# class	                 border  backgr. text    indicator child_border
 client.focused           #3c3836 #7c6f64 #1d2021 #3c3836   #3c3836
 client.focused_inactive  #282828 #282828 #ddc7a1 #282828   #282828
 client.unfocused		     #282828 #282828 #ddc7a1 #282828   #282828
@@ -35,7 +35,7 @@ client.placeholder		   #7daea3 #7daea3 #1d2021 #7daea3   #7daea3
 corner_radius 5
 
 layer_effects "waybar" {
-    blur enable;
+    blur enable;q
     blur_xray enable;
     blur_ignore_transparent enable;
     shadows enable;
@@ -122,8 +122,8 @@ bindsym $mod+w layout toggle split
 # Reload the configuration file
 bindsym $mod+Shift+c reload
 
-gaps inner 8
-gaps outer 8
+gaps inner 4
+gaps outer 4
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exit
@@ -136,3 +136,7 @@ bindsym $mod+Shift+e exit
 
 # Move the current window with the mod key + left mouse button
 floating_modifier $mod
+
+#remove title, remove border
+default_border none
+
