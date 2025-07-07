@@ -22,6 +22,7 @@ set $editor hx
 output * bg ~/.wallpapers/chernobyl4k.jpg fill
 
 exec pulseaudio
+exec /usr/libexec/xdg-desktop-portal
 
 
 # class	                 border  backgr. text    indicator child_border
@@ -32,10 +33,10 @@ client.urgent			       #d8a657 #d8a657 #1d2021 #d8a657   #d8a657
 client.placeholder		   #7daea3 #7daea3 #1d2021 #7daea3   #7daea3
 
 ###### Configurable for SwayFX users ######
-corner_radius 5
+corner_radius 10
 
 layer_effects "waybar" {
-    blur enable;q
+    blur enable;
     blur_xray enable;
     blur_ignore_transparent enable;
     shadows enable;
@@ -85,6 +86,9 @@ bindsym $mod+Shift+p exec picotron
 
 # Start sound control
 bindsym $mod+Shift+s exec pavucontrol
+
+# Start drun
+bindsym $mod+space exec wofi --show drun
 
 # Start Zed
 bindsym $mod+Shift+z exec /home/maurice/.local/bin/zed
