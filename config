@@ -19,10 +19,9 @@ set $term ghostty
 set $editor hx
 
 # Example configuration for a specific output (you can configure each output individually)
-output * bg ~/.wallpapers/chernobyl4k.jpg fill
+#output * bg ~/.wallpapers/chernobyl4k.jpg fill
 
 exec pulseaudio
-exec /usr/libexec/xdg-desktop-portal
 
 # class	                 border  backgr. text    indicator child_border
 client.focused           #3c3836 #7c6f64 #1d2021 #3c3836   #3c3836
@@ -143,3 +142,4 @@ floating_modifier $mod
 #remove title, remove border
 default_border none
 
+exec iw dev wlp13s0 scan
