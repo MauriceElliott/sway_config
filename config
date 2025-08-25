@@ -19,7 +19,7 @@ set $term ghostty
 set $editor hx
 
 # Example configuration for a specific output (you can configure each output individually)
-#output * bg ~/.wallpapers/chernobyl4k.jpg fill
+output * bg ~/.wallpapers/chernobyl.jpg fill
 
 exec pulseaudio
 
@@ -86,7 +86,7 @@ bindsym $mod+Shift+p exec picotron
 bindsym $mod+Shift+s exec pavucontrol
 
 # Start drun
-bindsym $mod+space exec wofi --show drun
+bindsym $mod+space exec fuzzel
 
 # Start Zed
 bindsym $mod+Shift+z exec /home/maurice/.local/bin/zed
