@@ -14,16 +14,16 @@
 # In the default configuration, Mod1 is Alt, Mod4 is the Super key or Windows
 # key, and Ctrl is Control.
 
-output "DP-10" scale 1.25
+ output "DP-10" scale 1.15
 
 set $mod Mod4
 set $term ghostty
 set $editor hx
 
 # Example configuration for a specific output (you can configure each output individually)
-output * bg ~/.wallpapers/chernobyl.jpg fill
+exec_always swaybg -i /home/maurice/wallpapers/chernobyl.jpg -m fill
 
-exec pulseaudio
+# exec pulseaudio
 exec_always autotiling
 
 # class	                 border  backgr. text    indicator child_border
@@ -72,10 +72,10 @@ output eDP-1 pos 0 0
 bindsym $mod+Return exec $term
 
 # Start firefox
-bindsym $mod+Shift+f exec firefox-wayland
+bindsym $mod+Shift+f exec firefox-bin
 
 # Start Picotron
-bindsym $mod+Shift+p exec picotron
+# bindsym $mod+Shift+p exec picotron
 
 # Start sound control
 bindsym $mod+Shift+s exec pavucontrol
@@ -84,13 +84,13 @@ bindsym $mod+Shift+s exec pavucontrol
 bindsym $mod+space exec fuzzel
 
 # Start Zed
-bindsym $mod+Shift+z exec /home/maurice/.local/bin/zed
+# bindsym $mod+Shift+z exec /home/maurice/.local/bin/zed
 
 # Kill focused window
 bindsym $mod+Shift+q kill
 
 # Start dmenu (a simple application launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
 
 # Change focus between tiling windows
 bindsym $mod+h focus left
@@ -149,8 +149,8 @@ bindsym $mod+greater exec next-workspace-move-container
 bindsym $mod+Shift+comma exec prev-workspace-move-container
 
 
-gaps inner 8
-gaps outer 8
+gaps inner 300
+gaps outer 300
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exit
@@ -166,5 +166,3 @@ floating_modifier $mod
 
 #remove title, remove border
 default_border none
-
-exec iw dev wlp13s0 scan
