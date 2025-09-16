@@ -149,8 +149,8 @@ bindsym $mod+greater exec next-workspace-move-container
 bindsym $mod+Shift+comma exec prev-workspace-move-container
 
 
-gaps inner 300
-gaps outer 300
+gaps inner 16
+gaps outer 16
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exit
