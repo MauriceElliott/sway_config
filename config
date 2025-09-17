@@ -34,7 +34,7 @@ client.urgent			       #d8a657 #d8a657 #1d2021 #d8a657   #d8a657
 client.placeholder		   #7daea3 #7daea3 #1d2021 #7daea3   #7daea3
 
 ###### Configurable for SwayFX users ######
-corner_radius 6
+corner_radius 2
 
 layer_effects "waybar" {
     blur enable;
@@ -55,18 +55,6 @@ layer_effects "gtk-layer-shell" {
 bar {
 	swaybar_command waybar
 }
-
-#display positions
-output DP-4 pos 1920 0
-output eDP-1 pos 0 0
-
-### Key bindings
-#
-# Basics:
-# - Use $mod+Return to open a terminal.
-# - Use $mod+Shift+q to close the focused window.
-# - Use $mod+d to launch a dmenu application launcher.
-
 
 # Start a terminal
 bindsym $mod+Return exec $term
