@@ -26,7 +26,7 @@ bindsym $mod+Shift+n exec swaync-client -t -sw
 
 
 # Example configuration for a specific output (you can configure each output individually)
-exec_always swaybg -i /home/maurice/Downloads/ufaCc2.png -m fill
+exec_always swaybg -i /home/maurice/wallpapers/tokyo5.jpg -m fill
 
 # exec pulseaudio
 exec_always autotiling
@@ -143,7 +143,7 @@ bindsym $mod+Shift+comma exec prev-workspace-move-container
 
 
 gaps inner 16
-gaps outer 16
+gaps outer 60
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exit
