@@ -19,10 +19,6 @@ set $term ghostty
 set $editor hx
 output "DP-10" scale 1.15
 
-exec swaync
-
-# Toggle control center
-bindsym $mod+Shift+n exec swaync-client -t -sw
 
 
 # Example configuration for a specific output (you can configure each output individually)
@@ -67,23 +63,11 @@ bindsym $mod+Return exec $term
 # Start firefox
 bindsym $mod+Shift+f exec firefox-bin
 
-# Start Picotron
-# bindsym $mod+Shift+p exec picotron
-
-# Start sound control
-bindsym $mod+Shift+s exec pavucontrol
-
 # Start drun
 bindsym $mod+space exec fuzzel
 
-# Start Zed
-# bindsym $mod+Shift+z exec /home/maurice/.local/bin/zed
-
 # Kill focused window
 bindsym $mod+Shift+q kill
-
-# Start dmenu (a simple application launcher)
-# bindsym $mod+d exec dmenu_run
 
 # Change focus between tiling windows
 bindsym $mod+h focus left
