@@ -14,14 +14,19 @@
 # In the default configuration, Mod1 is Alt, Mod4 is the Super key or Windows
 # key, and Ctrl is Control.
 
- output "DP-10" scale 1.15
-
 set $mod Mod4
 set $term ghostty
 set $editor hx
+output "DP-10" scale 1.15
+
+exec swaync
+
+# Toggle control center
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
 
 # Example configuration for a specific output (you can configure each output individually)
-exec_always swaybg -i /home/maurice/wallpapers/chernobyl.jpg -m fill
+exec_always swaybg -i /home/maurice/Downloads/ufaCc2.png -m fill
 
 # exec pulseaudio
 exec_always autotiling
