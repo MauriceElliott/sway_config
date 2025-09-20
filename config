@@ -19,23 +19,30 @@ set $term ghostty
 set $editor hx
 output "DP-10" scale 1.15
 
-
-
 # Example configuration for a specific output (you can configure each output individually)
-exec_always swaybg -i /home/maurice/wallpapers/tokyo5.jpg -m fill
+exec_always swaybg -i /home/maurice/wallpapers/eva_vapourwave.jpg -m fill
 
-# exec pulseaudio
+# makes sway BSP
 exec_always autotiling
 
-# class	                 border  backgr. text    indicator child_border
-client.focused           #3c3836 #7c6f64 #1d2021 #3c3836   #3c3836
-client.focused_inactive  #282828 #282828 #ddc7a1 #282828   #282828
-client.unfocused		     #282828 #282828 #ddc7a1 #282828   #282828
-client.urgent			       #d8a657 #d8a657 #1d2021 #d8a657   #d8a657
-client.placeholder		   #7daea3 #7daea3 #1d2021 #7daea3   #7daea3
+# # class	                 border  backgr. text    indicator child_border
+# client.focused           #3c3836 #7c6f64 #1d2021 #3c3836   #3c3836
+# client.focused_inactive  #282828 #282828 #ddc7a1 #282828   #282828
+# client.unfocused		     #282828 #282828 #ddc7a1 #282828   #282828
+# client.urgent			       #d8a657 #d8a657 #1d2021 #d8a657   #d8a657
+# client.placeholder		   #7daea3 #7daea3 #1d2021 #7daea3   #7daea3
 
 ###### Configurable for SwayFX users ######
 corner_radius 4
+blur_xray enable
+blur_passes 10
+blur_radius 10
+blur_noise 1
+blur_brightness 2
+blur_contrast 2
+blur_saturation 2
+shadows enable
+shadow_blur_radius 99
 
 layer_effects "waybar" {
     blur enable;
@@ -43,14 +50,6 @@ layer_effects "waybar" {
     blur_ignore_transparent enable;
     shadows enable;
     corner_radius 5;
-}
-
-layer_effects "gtk-layer-shell" {
-    blur enable;
-    blur_xray enable;
-    blur_ignore_transparent enable;
-    shadows enable;
-    corner_radius 4;
 }
 
 bar {
