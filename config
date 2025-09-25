@@ -1,36 +1,14 @@
-# Sway configuration file
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
-
-### Variables
-#
-# Set variables to make later customization easier. You can use these
-# variables by putting a $ in front of them. Example:
-#
-# set $mod Mod4
-#
-# In the default configuration, Mod1 is Alt, Mod4 is the Super key or Windows
-# key, and Ctrl is Control.
 
 set $mod Mod4
 set $term ghostty
 set $editor hx
+
 output "DP-10" scale 1.15
 
-# Example configuration for a specific output (you can configure each output individually)
 exec_always swaybg -i /home/maurice/wallpapers/eva_vapourwave.jpg -m fill
 
 # makes sway BSP
 exec_always autotiling
-
-# # class	                 border  backgr. text    indicator child_border
-# client.focused           #3c3836 #7c6f64 #1d2021 #3c3836   #3c3836
-# client.focused_inactive  #282828 #282828 #ddc7a1 #282828   #282828
-# client.unfocused		     #282828 #282828 #ddc7a1 #282828   #282828
-# client.urgent			       #d8a657 #d8a657 #1d2021 #d8a657   #d8a657
-# client.placeholder		   #7daea3 #7daea3 #1d2021 #7daea3   #7daea3
 
 ###### Configurable for SwayFX users ######
 corner_radius 4
@@ -45,11 +23,11 @@ shadows enable
 shadow_blur_radius 99
 
 layer_effects "waybar" {
-    blur enable;
-    blur_xray enable;
-    blur_ignore_transparent enable;
-    shadows enable;
-    corner_radius 5;
+    # blur enable;
+#     blur_xray enable;
+#     blur_ignore_transparent enabled;
+#     shadows enable;
+     corner_radius 1;
 }
 
 bar {
@@ -60,7 +38,7 @@ bar {
 bindsym $mod+Return exec $term
 
 # Start firefox
-bindsym $mod+Shift+f exec firefox-bin
+bindsym $mod+f exec firefox
 
 # Start drun
 bindsym $mod+space exec fuzzel
@@ -85,7 +63,7 @@ bindsym $mod+v split vertical
 bindsym $mod+b split horizontal
 
 # Toggle fullscreen
-bindsym $mod+f fullscreen
+bindsym $mod+shift+f fullscreen
 
 # Change the layout
 bindsym $mod+s layout stacking
@@ -130,12 +108,6 @@ gaps outer 60
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exit
-
-### Mouse bindings
-#
-# Customize mouse bindings for window manipulation
-# - Pressing $mod+Button1 will move the window.
-# - Pressing $mod+Button2 will resize the window.
 
 # Move the current window with the mod key + left mouse button
 floating_modifier $mod
