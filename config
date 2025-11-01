@@ -5,7 +5,7 @@ set $editor hx
 
 output "DP-10" scale 1.15
 
-exec_always swaybg -i /home/maurice/wallpapers/eva_vapourwave.jpg -m fill
+exec_always swaybg -i /home/maurice/wallpapers/pripyat1.jpg -m fill
 
 # makes sway BSP
 exec_always autotiling
@@ -103,7 +103,7 @@ bindsym $mod+greater exec next-workspace-move-container
 bindsym $mod+Shift+comma exec prev-workspace-move-container
 
 
-gaps inner 16
+gaps inner 4
 gaps outer 60
 
 # Exit sway (logs you out of your Wayland session)
