@@ -5,7 +5,7 @@ set $editor hx
 
 output "DP-10" scale 1.15
 
-exec_always swaybg -i /home/maurice/wallpapers/pripyat1.jpg -m fill
+exec_always swaybg -i /home/maurice/wallpapers/poland2.jpg -m fill
 
 # makes sway BSP
 exec_always autotiling
