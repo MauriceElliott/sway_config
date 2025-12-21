@@ -5,7 +5,7 @@ set $editor hx
 
 output "DP-10" scale 1.15
 
-exec_always swaybg -i /home/maurice/wallpapers/poland2.jpg -m fill
+exec_always swaybg -i /home/maurice/wallpapers/Tokyo4.jpg -m fill
 
 # makes sway BSP
 exec_always autotiling
@@ -38,7 +38,7 @@ bar {
 bindsym $mod+Return exec $term
 
 # Start firefox
-bindsym $mod+f exec firefox
+bindsym $mod+f exec helium
 
 # Start drun
 bindsym $mod+space exec fuzzel
