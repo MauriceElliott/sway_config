@@ -37,11 +37,14 @@ bar {
 # Start a terminal
 bindsym $mod+Return exec $term
 
-# Start firefox
+# Start helium
 bindsym $mod+f exec helium
 
-# Start drun
+# Start fuzzel
 bindsym $mod+space exec fuzzel
+
+# Start picotron
+bindsym $mod+p exec /home/maurice/.local/bin/picotron
 
 # Kill focused window
 bindsym $mod+Shift+q kill
