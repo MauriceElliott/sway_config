@@ -5,7 +5,7 @@ set $editor hx
 
 output "DP-10" scale 1.15
 
-exec_always swaybg -i /home/maurice/wallpapers/eva_vapourwave2.jpg -m fill
+exec_always swaybg -i /home/maurice/wallpapers/pripyat2.jpg -m fill
 
 # makes sway BSP
 exec_always autotiling
@@ -26,7 +26,7 @@ layer_effects "waybar" {
     # blur enable;
 #     blur_xray enable;
 #     blur_ignore_transparent enabled;
-#     shadows enable;
+     shadows enable;
      corner_radius 1;
 }
 
