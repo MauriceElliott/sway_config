@@ -4,7 +4,7 @@ set $term ghostty
 set $editor hx
 
 output "DP-10" scale 1.15
-
+output "eDP-1" scale 1.25
 exec_always swaybg -i /home/maurice/wallpapers/pripyat2.jpg -m fill
 
 # makes sway BSP
