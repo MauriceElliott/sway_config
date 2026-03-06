@@ -117,3 +117,17 @@ floating_modifier $mod
 
 #remove title, remove border
 default_border none
+
+# ===== Brightness Controls for macbook pro =====
+
+bindsym XF86MonBrightnessDown exec brightnessctl set 10%-
+bindsym XF86MonBrightnessUp exec brightnessctl set 10%+
+
+# Keyboard backlight brightness
+bindsym XF86KbdBrightnessDown exec bash -c 'NEW=$(($(cat /sys/class/leds/:white:kbd_backlight/brightness) - 2440)); [ $NEW -lt 0 ] && NEW=0; echo $NEW | sudo tee /sys/class/leds/:white:kbd_backlight/brightness > /dev/null'
+bindsym XF86KbdBrightnessUp exec bash -c 'NEW=$(($(cat /sys/class/leds/:white:kbd_backlight/brightness) + 2440)); [ $NEW -gt 14660 ] && NEW=14660; echo $NEW | sudo tee /sys/class/leds/:white:kbd_backlight/brightness > /dev/null'
+
+# Volume controls
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
